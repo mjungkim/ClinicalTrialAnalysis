@@ -1,0 +1,73 @@
+library(shinydashboard)
+library(leaflet)
+library(DT)
+
+
+shinyUI(dashboardPage(
+  skin = "purple",
+  dashboardHeader(title = "Minjung's App"),
+  
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("Introduction", tabName = "introduction", icon = icon("info")),
+      menuItem("Map", tabName = "map", icon = icon("map")),
+      menuItem("Information", tabName = "information", icon = icon("table")),
+      menuItem("Exploration", tabName = "exploration", icon = icon("table")),
+      menuItem("Data", tabName = "data", icon = icon("database")),
+      menuItem("About", tabName = "about", icon = icon("smile"))
+    )
+  ),
+  
+  
+  dashboardBody(
+    tabItems(
+      tabItem(
+        tabName = "introduction",
+        fluidRow(
+          style = "padding: 20px;",
+          h1("Landscape of Oncology Clinical Research in the US"),
+          h4("Analysis of Clinical Trial Cancer Registry"),
+          br(),
+          br(),
+          h4("Leading cause of death in the US:"),
+          p("- Cancer"),
+          br(),
+          br(),
+          h4("Purpose: "),
+          p("- Exploration of cancer related clinical trials"),
+
+        ),
+        br(),
+        br(),
+        br(),
+        br(),
+        br(),
+        
+        fluidRow()
+      ),
+      
+      
+    
+      
+      tabItem(
+        tabName = "about",
+        fluidRow(style = "padding: 20px;",
+                 h2("Background"),
+                 br(),
+                 h4("Minjung Kim has a degree in Sociology and 6+ years of experience in operations and policy development in the airline industry. "),
+                 h4("She is currently working as an Assistant Manager at JinAir conducting passenger and staff data analytics in order to provide "),
+                 h4("smoother experiences for traveling customers. Minjung has a passion for helping people and is looking to transition into the  "),
+                 h4("healthcare field where can utilize her data analytics and statistical skills to make an impact on patients’ lives. "),
+                 
+                 br(),
+                 br(),
+                 img(src = 'mcmj.png', height = '300px', width = '350px')
+        )
+      )
+      
+      
+    )
+  )
+  
+  )
+ )
