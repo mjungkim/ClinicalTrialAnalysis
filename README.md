@@ -1,6 +1,6 @@
 # ClinicalTrialAnalysisApplication
 
-This app is a prototype and was created mainly for educational purposes. The data was a subset of the cardiovascular clinical studies in https://clinicaltrials.gov.
+This app is a prototype and was created mainly for educational purposes. The data is from https://clinicaltrials.gov.
 
 The app can be found at: https://mjungkim91.shinyapps.io/clinicaltrialproject/
 
